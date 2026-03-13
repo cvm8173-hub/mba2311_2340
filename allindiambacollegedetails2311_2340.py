@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/institute-of-integrated-professional-studies-shillong-72313",
-  "https://www.shiksha.com/college/rajashree-shahu-maharaj-college-of-agriculture-business-management-maharashtra-other-153913",
-  "https://www.shiksha.com/college/swami-vivekanand-institute-of-management-shahdol-210179",
-  "https://www.shiksha.com/college/akash-institute-of-engineering-and-technology-hubli-213411",
-  "https://www.shiksha.com/college/sreenivasa-institute-of-technology-and-management-studies-chittoor-21250",
-  "https://www.shiksha.com/college/ronald-ross-p-g-college-of-management-studies-ranga-reddy-25155",
-  "https://www.shiksha.com/college/regional-group-of-institutions-gurgaon-29715",
-  "https://www.shiksha.com/college/oasys-institute-of-technology-tiruchirappalli-43344",
-  "https://www.shiksha.com/college/general-shivdev-singh-diwan-gurbachan-singh-khalsa-college-patiala-65167",
-  "https://www.shiksha.com/college/ssld-varshney-institute-of-management-engineering-aligarh-65679",
-  "https://www.shiksha.com/college/morigaon-college-69057",
-  "https://www.shiksha.com/college/infinity-management-and-engineering-college-madhya-pradesh-other-48227",
-  "https://www.shiksha.com/college/vaagdevi-engineering-college-warangal-61357",
-  "https://www.shiksha.com/college/mother-theressa-college-of-engineering-and-technology-karimnagar-62155",
-  "https://www.shiksha.com/college/rousseau-institute-of-management-studies-karimnagar-62221",
-  "https://www.shiksha.com/college/dr-csn-degree-and-pg-college-bhimavaram-62469",
-  "https://www.shiksha.com/college/innocent-hearts-group-of-institutions-loharan-jalandhar-67333",
-  "https://www.shiksha.com/college/manjula-k-ponda-college-of-management-bhopal-73361",
-  "https://www.shiksha.com/college/mayurbhanj-college-of-accountancy-and-management-baripada-73569",
-  "https://www.shiksha.com/college/smit-post-graduate-centre-for-management-studies-brahmapur-76377",
+  "https://www.shiksha.com/college/sardar-vallabh-bhai-patel-mahavidyalaya-madhya-pradesh-other-147521",
+  "https://www.shiksha.com/college/brahmanand-institute-of-research-technology-and-management-bulandshahr-32884",
+  "https://www.shiksha.com/college/centre-for-management-studies-orissa-engineering-college-cms-oec-bhubaneswar-34506",
+  "https://www.shiksha.com/college/keystone-group-of-institutions-jhunjhunu-40139",
+  "https://www.shiksha.com/college/ambal-professional-group-of-institutions-coimbatore-42847",
+  "https://www.shiksha.com/college/san-group-of-institutions-coimbatore-43345",
+  "https://www.shiksha.com/college/viswanadha-institute-of-technology-and-management-visakhapatnam-44887",
+  "https://www.shiksha.com/college/dr-k-v-subba-reddy-college-of-engineering-for-women-kvsw-kurnool-46498",
+  "https://www.shiksha.com/college/surendera-group-of-institutions-sriganaganagar-46880",
+  "https://www.shiksha.com/college/naraina-college-of-engineering-and-technology-kanpur-52789",
+  "https://www.shiksha.com/college/balaji-institute-of-engineering-and-management-studies-nellore-54533",
+  "https://www.shiksha.com/college/srm-trp-engineering-college-tiruchirappalli-54733",
+  "https://www.shiksha.com/college/corporate-institute-of-science-and-technology-bhopal-59183",
+  "https://www.shiksha.com/college/mit-college-of-management-moradabad-59983",
+  "https://www.shiksha.com/college/laxmipati-institute-of-science-technology-bhopal-60357",
+  "https://www.shiksha.com/college/g-s-college-of-commerce-wardha-64229",
+  "https://www.shiksha.com/college/surya-institute-of-management-studies-villupuram-202211",
+  "https://www.shiksha.com/college/sunstone-netaji-subhas-university-jamshedpur-205067",
+  "https://www.shiksha.com/university/assam-women-s-university-jorhat-228085",
+  "https://www.shiksha.com/college/k-s-rangasamy-college-of-arts-and-science-namakkal-231704",
 ]
 
 
@@ -9242,7 +9242,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count =2011
+    c_count =2291
 
     try:
         for base_url in BASE_URL:
