@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/sardar-vallabh-bhai-patel-mahavidyalaya-madhya-pradesh-other-147521",
-  "https://www.shiksha.com/college/brahmanand-institute-of-research-technology-and-management-bulandshahr-32884",
-  "https://www.shiksha.com/college/centre-for-management-studies-orissa-engineering-college-cms-oec-bhubaneswar-34506",
-  "https://www.shiksha.com/college/keystone-group-of-institutions-jhunjhunu-40139",
-  "https://www.shiksha.com/college/ambal-professional-group-of-institutions-coimbatore-42847",
-  "https://www.shiksha.com/college/san-group-of-institutions-coimbatore-43345",
-  "https://www.shiksha.com/college/viswanadha-institute-of-technology-and-management-visakhapatnam-44887",
-  "https://www.shiksha.com/college/dr-k-v-subba-reddy-college-of-engineering-for-women-kvsw-kurnool-46498",
-  "https://www.shiksha.com/college/surendera-group-of-institutions-sriganaganagar-46880",
-  "https://www.shiksha.com/college/naraina-college-of-engineering-and-technology-kanpur-52789",
-  "https://www.shiksha.com/college/balaji-institute-of-engineering-and-management-studies-nellore-54533",
-  "https://www.shiksha.com/college/srm-trp-engineering-college-tiruchirappalli-54733",
-  "https://www.shiksha.com/college/corporate-institute-of-science-and-technology-bhopal-59183",
-  "https://www.shiksha.com/college/mit-college-of-management-moradabad-59983",
-  "https://www.shiksha.com/college/laxmipati-institute-of-science-technology-bhopal-60357",
-  "https://www.shiksha.com/college/g-s-college-of-commerce-wardha-64229",
-  "https://www.shiksha.com/college/surya-institute-of-management-studies-villupuram-202211",
-  "https://www.shiksha.com/college/sunstone-netaji-subhas-university-jamshedpur-205067",
-  "https://www.shiksha.com/university/assam-women-s-university-jorhat-228085",
-  "https://www.shiksha.com/college/k-s-rangasamy-college-of-arts-and-science-namakkal-231704",
+  "https://www.shiksha.com/college/gyansagar-academy-college-madhya-pradesh-other-147345",
+  "https://www.shiksha.com/college/teerath-institute-bhopal-147509",
+  "https://www.shiksha.com/college/arignar-anna-college-krishnagiri-193727",
+  "https://www.shiksha.com/college/icri-mewar-university-chittorgarh-212191",
+  "https://www.shiksha.com/college/vikrama-simhapuri-university-post-graduate-center-kavali-andhra-pradesh-other-212375",
+  "https://www.shiksha.com/college/sanjivani-group-of-institutes-ahmednagar-214781",
+  "https://www.shiksha.com/college/koneru-lakshmaiah-education-foundation-ranga-reddy-232452",
+  "https://www.shiksha.com/college/niilm-school-of-business-badarpur-delhi-4324",
+  "https://www.shiksha.com/college/prakasam-engineering-college-22878",
+  "https://www.shiksha.com/college/panchkula-engineering-college-pec-panchkula-24418",
+  "https://www.shiksha.com/college/srinivas-school-of-business-ssb-mangalore-24737",
+  "https://www.shiksha.com/college/guru-nanak-institutions-ambala-59831",
+  "https://www.shiksha.com/college/institute-of-engineering-technology-lucknow-59923",
+  "https://www.shiksha.com/college/aashlar-business-school-mathura-60129",
+  "https://www.shiksha.com/college/sri-venkateswara-institute-of-science-and-technology-kadapa-61455",
+  "https://www.shiksha.com/college/chegireddy-linga-reddy-institute-of-management-andhra-pradesh-other-62329",
+  "https://www.shiksha.com/college/vrn-college-of-computer-science-and-management-chittoor-62517",
+  "https://www.shiksha.com/college/gokul-group-of-institutions-vizianagaram-63537",
+  "https://www.shiksha.com/college/venkateshwara-institue-of-management-sangli-64263",
+  "https://www.shiksha.com/college/shrimant-jayshreemaladevi-naik-nimbalkar-institute-of-management-studies-satara-64347",
 ]
 
 
@@ -9242,7 +9242,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count =2291
+    c_count =2551
 
     try:
         for base_url in BASE_URL:
